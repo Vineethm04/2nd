@@ -1,0 +1,24 @@
+configure the maven project and set the pom.xml file...after properies add selenium and testng dependencies using the <dependencies>
+copy index,style,logo folder and paste it in src>main>resources
+add the plugins...copy paste the pom.xml2 from this repo>then mvn clean install
+upload the site to github..git init>git add .>git status>git commit -m "Added three files">
+git remote add origin repo-url>git push -u origin master>go to github repo and then to pages then deploy the site
+in src/test/java create a new package named org.test...in org.test paste the code from WebpageTest...then run the code
+add the jar file pluggin in pom.xml...just copy paste from here...then give command mvn clean package
+then run java -jar ./target/name of the jar file/
+add the apache maven plugin ad run command mvn site
+
+
+6th one:
+log in to jenkine
+click on add new item and give description then click ok
+again give description then click on build steps and select windows batch command
+there paste the address of the 2nd project by copying it from the terminal and then write mvn test and save and build now
+again click on new item name it as github connection select freestyle project then press ok
+in source code management select git and select ur git credentials
+then select the master branch and then click save and 
+again go to new item and give description as selenium maven test>freestyle project>ok
+select git and select the git credentials
+in build step give mvn test comman save it
+
+
